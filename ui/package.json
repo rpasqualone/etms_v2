@@ -1,0 +1,16 @@
+{
+  "name": "etms-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Pasqualone <rpasqualone@helixeducation.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "lodash": "^4.6.1"
+  }
+}

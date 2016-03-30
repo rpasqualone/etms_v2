@@ -7,15 +7,15 @@ var _ = require('lodash');
 var User = require('../models/user');
 var jwt = require('jsonwebtoken');
 
-router.post('/', function (req, res) {
+router.post('/', (req, res) => {
 	User.comparePassword(req.body)
-		.then(function (result) {
+		.then((result) => {
 			if (!result) { return res.ok(result); }
 			//var token = jwt.sign(result, config.secret);
 			return res.ok(result);
 			//return res.ok(token);
 		})
-		.catch(function (err) {
+		.catch((err) => {
 			res.InternalServerError(err.message);
 		});
 });

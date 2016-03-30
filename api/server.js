@@ -5,9 +5,7 @@ var express = require('express');
 var expressJWT = require('express-jwt');
 var app = express();
 
-app.use(function (err, req, res, next) {
-	console.log(err);
-});
+app.use((err, req, res, next) => { console.log(err); });
 
 //app.use(expressJWT({secret: config.secret}).unless({path: ['/sessions', '/users']}));
 

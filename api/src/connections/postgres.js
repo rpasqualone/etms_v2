@@ -3,9 +3,9 @@
 var config = require('../services/config');
 var pg = require('pg');
 
-module.exports = new Promise(function (resolve) {
+module.exports = new Promise((resolve) => {
 	var client = new pg.Client(config.postgres);
-	client.connect(function (err) {
+	client.connect((err) => {
 		if (err) { throw err; }
 		resolve(client);
 	});
