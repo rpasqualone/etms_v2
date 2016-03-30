@@ -1,0 +1,8 @@
+# JetBrains configuration
+.idea/**
+
+# Temporary files
+temp
+
+# Mac files
+.DS_Store
