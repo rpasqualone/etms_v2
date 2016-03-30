@@ -1,0 +1,22 @@
+{
+  "name": "etms-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Richard Pasqualone <rpasqualone@helixeducation.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-jwt": "^3.3.0",
+    "http-responses": "0.0.5",
+    "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.6.1",
+    "pg": "^4.5.1"
+  }
+}
