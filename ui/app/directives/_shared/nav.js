@@ -1,4 +1,6 @@
-angular.module('app.nav', [])
+import angular from 'angular';
+
+export default angular.module('directives.nav', [])
 	.directive('nav', function () {
 		return {
 			restrict: 'E',
@@ -10,4 +12,4 @@ angular.module('app.nav', [])
 				};
 			}
 		};
-	});
+	}).name;
