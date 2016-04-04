@@ -8,7 +8,7 @@ export default angular.module('directives.nav', [])
 			replace: true,
 			controller: ($scope) => {
 				$scope.linkClicked = () => {
-					var props = {x: 2};
+					var props = {x: 3};
 					console.log(props.x);
 				};
 			}

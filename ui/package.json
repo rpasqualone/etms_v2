@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack; webpack-dev-server --output-public-path=/build/ --content-base --hot"
+    "start": "webpack; webpack-dev-server --output-public-path=/build/ --content-base"
   },
   "author": "Richard Pasqualone <rpasqualone@helixeducation.com>",
   "license": "ISC",
