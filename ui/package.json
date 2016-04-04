@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack; webpack-dev-server ./app/module.js --hot --inline",
-    "dev": "webpack-dev-server ./app/module.js --hot --inline"
+    "start": "webpack; webpack-dev-server --output-public-path=/build/ --content-base --hot"
   },
   "author": "Richard Pasqualone <rpasqualone@helixeducation.com>",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
     "babel-core": "^6.7.4",
     "bootstrap": "^3.3.6",
     "lodash": "^4.6.1"
