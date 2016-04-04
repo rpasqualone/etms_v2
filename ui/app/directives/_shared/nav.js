@@ -7,9 +7,10 @@ export default angular.module('directives.nav', [])
 			templateUrl: 'templates/nav.html',
 			replace: true,
 			controller: ($scope) => {
-				$scope.linkClicked = () => {
-					var props = {x: 3};
-					console.log(props.x);
+				$scope.elements = [1,2,3];
+				
+				$scope.linkClicked = (index) => {;
+					console.log(index);
 				};
 			}
 		};

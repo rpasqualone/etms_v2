@@ -1,5 +1,3 @@
 <ul>
-	<li ng-click="linkClicked()">List 1</li>
-	<li>List 2</li>
-	<li>List 3</li>
+	<li ng-repeat="element in elements track by $index" ng-click="linkClicked($index)">{{element}}</li>
 </ul>
