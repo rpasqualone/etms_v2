@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 module.exports = {
 	context: __dirname + '/app',
-		entry: {
+	entry: {
 		app: ['webpack/hot/dev-server', './app.module.js']
 	},
 	output: {
@@ -15,7 +15,15 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.jsx?$/,
+				test: /\.css$/,
+				loader: 'style!css!'
+			},
+			{
+				test: /\.scss$/,
+				loader: 'style!css!sass'
+			},
+			{
+				test: /\.js$/,
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel?presets[]=es2015'
 			}

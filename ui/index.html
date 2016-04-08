@@ -4,10 +4,14 @@
 		<meta charset="UTF-8">
 		<title>ETMS v2</title>
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="assets/css/master.css">-->
 	</head>
 	<body>
-		<header></header>
-		<ui-view></ui-view>
+		<side-bar></side-bar>
+		<div class="content-wrapper">
+			<header props="{bool: true}"></header>
+			<ui-view></ui-view>
+		</div>
 		<script src="build/bundle.js"></script>
 		<script src="/webpack-dev-server.js"></script>
 	</body>
